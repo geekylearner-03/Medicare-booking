@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-CLIENT_SITE_URL
 const CheckoutSuccess = () => {
   return (
     <div className="bg-gray-100 h-screen">
