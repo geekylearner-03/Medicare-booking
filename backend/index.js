@@ -12,7 +12,7 @@ import bookingRoute from './Routes/booking.js'
 dotenv.config();
 
 const app = express()
-const path = import("path");
+
 const port = process.env.PORT || 5000;
 
 const corsOptions = {
@@ -22,11 +22,6 @@ const corsOptions = {
 app.get('/', (req,res)=>{
     res.send('api is working');
 });
-
-app.get("/", (req, res) => {
-    app.use(express.static(path.resolve(__dirname, "frontend", "dist")));
-    res.sendFile(path.resolve(__dirname, "frontend", "dist", "index.html"));
-  });
 
 //DATABASE CONNECTION
 mongoose.set('strictQuery', false) //if not done then the brorser will generate warning
