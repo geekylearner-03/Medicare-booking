@@ -9,12 +9,13 @@ import MyAccount from "../Dashboard/user-account/MyAccount.jsx";
 import Dashboard from "../Dashboard/doctor-account/Dashboard.jsx";
 import CheckoutSuccess from "../pages/CheckoutSuccess.jsx";
 
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 
 const Routers = () => {
   return (
-    <Routes>
+    <BrowserRouter>
+      <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/doctors" element={<Doctors />} />
@@ -41,6 +42,8 @@ const Routers = () => {
         }
       />
     </Routes>
+    </BrowserRouter>
+    
   );
 };
 
