@@ -8,7 +8,7 @@ export default defineConfig({
 
   build: {
     lib: {
-      entry: resolve(__dirname, 'lib/CheckoutSuccess.jsx'),
+      entry: resolve(__dirname, 'frontend/src/pages/CheckoutSuccess.jsx'),
       formats: ['es']
     }
   }
