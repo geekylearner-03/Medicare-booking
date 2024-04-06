@@ -5,16 +5,16 @@ import Login from "../pages/Login";
 import Contact from "../pages/Contact";
 import DoctorDetails from "../pages/Doctors/DoctorDetails";
 import Doctors from "../pages/Doctors/Doctors";
-import MyAccount from "../Dashboard/user-account/MyAccount.jsx";
-import Dashboard from "../Dashboard/doctor-account/Dashboard.jsx";
-import CheckoutSuccess from "../pages/CheckoutSuccess.jsx";
+import MyAccount from "../Dashboard/user-account/MyAccount";
+import Dashboard from "../Dashboard/doctor-account/Dashboard";
+import CheckoutSuccess from '../pages/CheckoutSuccess'
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import ProtectedRoute from "./ProtectedRoute";
 
 const Routers = () => {
   return (
-    <BrowserRouter>
+    
       <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
@@ -42,7 +42,7 @@ const Routers = () => {
         }
       />
     </Routes>
-    </BrowserRouter>
+    
     
   );
 };
