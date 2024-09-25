@@ -30,7 +30,10 @@ const Home = () => {
               <div className='lg:w-[570px]'>
                 <h1 className='text-[36px] leading-[46px] text-headingColor font-[800] md:text-[60px] md:leading-[70px] '>We help patients live a healthy, longer life</h1>
                 <p className='text__para'>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ex temporibus quisquam quod repudiandae debitis at distinctio illo rerum, libero aut. Qui saepe debitis corporis quod dolores possimus enim rem, nam laboriosam dolore assumenda! Nihil eveniet illo odio cupiditate.
+                Providing comprehensive healthcare services for seniors with personalized 
+                care plans, advanced medical treatments, and compassionate support. 
+                Ensuring your well-being with 24/7 emergency assistance, preventive care programs, 
+                and expert consultations. Empowering you to live a healthy, independent life.
                 </p>
 
                 <button className='btn'>Request an Appointment</button>
